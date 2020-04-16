@@ -14,9 +14,11 @@ app.use('/', express.static(__dirname + '/public'))
 
 app.use('/todos', todoRoute)
 
+const PORT = process.env.PORT || 3000;
+
 db.sync()
   .then(() => {
-    app.listen(6789)
+    app.listen(PORT)
   })
   .catch((err) => {
     console.error(err)
