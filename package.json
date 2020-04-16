@@ -2,13 +2,13 @@
   "name": "managetask",
   "version": "1.0.0",
   "description": "",
-  "main": "Server.js",
+  "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node Server.js"
+    "start": "node server.js"
   },
   "engines": {
-    "node": "12.16.2"
+    "node": "12.16.1"
   },
   "repository": {
     "type": "git",
