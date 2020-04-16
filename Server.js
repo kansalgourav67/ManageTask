@@ -14,7 +14,7 @@ app.use('/', express.static(__dirname + '/public'))
 
 app.use('/todos', todoRoute)
 
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT;
 
 db.sync()
   .then(() => {
